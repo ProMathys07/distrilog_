@@ -1,0 +1,7 @@
+.venv
+postman
+.postman
+Captures
+Claude outputs
+**/*.db
+**/__pycache__

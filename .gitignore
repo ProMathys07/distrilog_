@@ -1,0 +1,12 @@
+# Environnement Python
+.venv/
+__pycache__/
+*.pyc
+
+# Bases SQLite locales (recréées automatiquement)
+*.db
+
+# Fichiers système / outils
+.DS_Store
+.vscode/
+Claude outputs/

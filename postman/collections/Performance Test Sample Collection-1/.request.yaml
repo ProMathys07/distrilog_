@@ -1,0 +1,15 @@
+$kind: http-request
+name: ""
+url: http://localhost:8003/commandes
+method: POST
+body:
+  type: json
+  content: '{"sku":"PAL-01","quantite":1} '
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("201 créé", () => {
+      pm.response.to.have.status(201);
+      });
+    language: text/javascript
+order: 1000
